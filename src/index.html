@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/advanced-stencil.esm.js"></script>
+    <script nomodule src="/build/advanced-stencil.js"></script>
+  </head>
+  <body>
+    <fdk-stock-price stock-symbol="AAPL"></fdk-stock-price>
+    <fdk-stock-finder></fdk-stock-finder>
+
+    <!-- Instead of doing this, I want to listen from another component to this custom event 'fdkSymbolSelected' -->
+    <!-- <script>
+      const stockFinderEl = document.querySelector('fdk-stock-finder');
+      stockFinderEl.addEventListener('fdkSymbolSelected', e => {
+        console.log(e.detail);
+      });
+    </script> -->
+  </body>
+</html>
